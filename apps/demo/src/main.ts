@@ -1,4 +1,7 @@
 import { index } from './app/'
 
 console.clear()
-index()
+
+index().catch((err) => {
+  console.error('err', err)
+})
